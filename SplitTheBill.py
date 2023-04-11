@@ -1,7 +1,4 @@
-def split_the_bill(x):
-    # Code Away!
-    average = sum(x.values())/len(x)
-        
-    for key in x.keys():
-        x[key] = round(x[key] - average, 2)
-    return x
+start = 101
+finish = 110
+for i in range(start, finish+1):
+    print('start:', i)
