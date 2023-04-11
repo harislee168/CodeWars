@@ -3,5 +3,5 @@ def split_the_bill(x):
     average = sum(x.values())/len(x)
         
     for key in x.keys():
-        x[key] = x[key] - average
+        x[key] = round(x[key] - average, 2)
     return x
