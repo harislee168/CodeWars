@@ -12,4 +12,3 @@ def longest(a1, a2):
     char_list.sort()
     
     return ''.join(char_list)
-    
