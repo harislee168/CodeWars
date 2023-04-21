@@ -1,15 +1,8 @@
 def duplicate_count(text):
-    my_dict = dict()
-    total_duplicate = 0
-    for each_char in text.lower():
-        char_count = my_dict.get(each_char)
-        if char_count is None:
-            char_count = 0
-        char_count+=1
-        my_dict.update({each_char:char_count})
-    
-    for value in my_dict.values():
-        if value > 1:
-            total_duplicate += 1
-            
-    return total_duplicate
+    lower_text = text.lower()
+    my_set = set(lower_text)
+    no_duplicate = 0
+    for each_char in my_set:
+        if lower_text.count(each_char) > 1:
+            no_duplicate +=1
+    return no_duplicate
